@@ -1,16 +1,16 @@
-# Blog Platform (Go + Next.js)
+# Qeyo -- A simple, self-hostable blog platform
 
 A modern, self-hostable blog platform built with:
+
 - Next.js (App Router) for the public site and admin interface
 - Go for the backend API
 - PostgreSQL for content and analytics storage
 
 This project is designed to be:
+
 - Simple to deploy
 - Technically transparent
 - Suitable for developers who want full control over their blog infrastructure
-
----
 
 ## Project Goals
 
@@ -21,16 +21,16 @@ This project is designed to be:
 
 This project is built incrementally. Not all features are available yet.
 
----
-
 ## Architecture Overview
 
 - **Frontend**
+
   - Next.js (App Router)
   - Public blog + protected admin interface
   - SEO-first, performance-oriented
 
 - **Backend**
+
   - Go HTTP API
   - Clean architecture (handlers, services, repositories)
   - PostgreSQL as the primary datastore
@@ -38,8 +38,6 @@ This project is built incrementally. Not all features are available yet.
 - **Content**
   - Markdown-based articles
   - Progressive migration from filesystem to database-backed storage
-
----
 
 ## Roadmap (High-Level)
 
@@ -51,8 +49,6 @@ This project is built incrementally. Not all features are available yet.
 - [ ] Media management
 - [ ] Search
 
----
-
 ## Licensing
 
 This project is **source-available**, not open source.
@@ -60,11 +56,13 @@ This project is **source-available**, not open source.
 It is licensed under the **Business Source License 1.1 (BSL)**.
 
 ### What you CAN do
+
 - View the source code
 - Self-host the platform for personal or internal business use
 - Modify the code for your own needs
 
 ### What you CANNOT do without a commercial license
+
 - Offer this software as a hosted service or SaaS
 - Sell a competing managed blog platform based on this code
 
@@ -74,16 +72,12 @@ under the Apache License 2.0.
 For commercial licensing, hosting, or support inquiries, please contact
 the project author.
 
----
-
 ## Status
 
 This project is under active development.
 The API, database schema, and features may change.
 
 Contributions are not accepted at this stage.
-
----
 
 ## Disclaimer
 
