@@ -1,5 +1,19 @@
 {
-	"devDependencies": {
-		"@playwright/test": "^1.57.0"
-	}
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7"
+  },
+  "scripts": {
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "apps/web/**/*.{ts,tsx,js,jsx}": [
+      "pnpm --dir apps/web exec prettier --write",
+      "pnpm --dir apps/web exec eslint --fix"
+    ],
+    "apps/web/**/*.{json,md,css,scss}": [
+      "pnpm --dir apps/web exec prettier --write"
+    ]
+  }
 }
