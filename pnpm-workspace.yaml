@@ -1,0 +1,16 @@
+packages:
+  # Applications
+  - "apps/*"
+
+  # Packages/libraries partagées
+  - "packages/*"
+
+  # Optionnel : si tu as des sous-packages plus profonds (ex: packages/foo/bar)
+  - "packages/**"
+
+  # Optionnel : si tu as des apps imbriquées (ex: apps/web/app)
+  - "apps/**"
+
+ignoredBuiltDependencies:
+  - sharp
+  - unrs-resolver
