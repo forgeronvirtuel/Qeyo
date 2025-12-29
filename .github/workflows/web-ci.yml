@@ -48,8 +48,8 @@ jobs:
           node-version: ${{ matrix.node }}
           cache: pnpm
 
-      - name: Install dependencies
-        run: pnpm --filter web... install --frozen-lockfile
+      - name: Install dependencies (forced root)
+        run: pnpm -C "$GITHUB_WORKSPACE" --filter web... install --frozen-lockfile
 
       - name: Debug workspace
         run: |
