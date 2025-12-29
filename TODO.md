@@ -1,0 +1,3 @@
+- [x] Setup git hooks (lint-staged + husky)
+- [ ] CI github Actions
+- [x] Check if current pnpm-workspace is ok or not

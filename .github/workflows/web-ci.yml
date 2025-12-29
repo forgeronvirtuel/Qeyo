@@ -51,6 +51,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Debug workspace
+        run: |
+          pnpm -r list --depth -1
+          ls -la apps/web/node_modules/.bin | head -n 20
+
       - name: Format check
         run: pnpm --filter web format:check
 
